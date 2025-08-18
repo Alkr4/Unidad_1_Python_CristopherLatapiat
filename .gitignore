@@ -1,0 +1,45 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+*.sqlite3
+*.db-journal
+*.log
+*.pot
+*.pyc
+*.mo
+
+# media y archivos de estáticos generados
+media/
+static/
+
+# Entorno virtual
+venv/
+env/
+ENV/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# coverage
+.coverage
+.coverage.*
+
+# mypy
+.mypy_cache/
+
+# archivos temporales
+*.swp
+*.swo
