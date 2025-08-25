@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de dispositivos</title>
+
+<style>
+    .exceso{
+        color: red;
+    }
+    .correcto{
+        color: green;
+    }
+</style>
 </head>
 <body>
     <h1>Panel de dispositivos</h1>
     <p>Consumo maximo permitido: {{consumo_maximo}}</p>
     <hr>
         {% for p in dispositivos %}
-            <p>Nombre: {{p.nombre}} - Consumo: {{p.consumo}}</p>
+            {% if p.consumo > consumo_maximo %}
+                <p class="exceso">Nombre: {{p.nombre}} - Consumo: {{p.consumo}} W </p>
+            {% else %}
+                <p class="correcto">Nombre: {{p.nombre}} - Consumo: {{p.consumo}} W </p>
+            {% endif %}
         {% endfor %}
 
 </body>
