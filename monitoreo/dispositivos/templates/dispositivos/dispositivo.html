@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pan con keso</title>
+</head>
+<body>
+    <h1>Dispositivo {{dispositivo.nombre}}</h1>
+    <p>Categoria: {{dispositivo.categoria}}</p>
+    <p>Fecha de creacion: {{dispositivo.created_at}}</p>
+    <p>Estado: {{dispositivo.estado}}</p>
+    <p>volver a <a href="{% url 'dispositivo' d.id %}">Detalle</a></p>
+</body>
+</html>

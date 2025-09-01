@@ -6,6 +6,14 @@
     <title>aaaaaaaa</title>
 </head>
 <body>
-    <h1>Hola {{nombre}}aaaaaaaaaaaaaaaaa</h1>
+        <h1>Panel de dispositivos</h1>
+        <hr>
+        <ul>
+            {% for d in dispositivos %}
+                <li>{{d.nombre}} - {{d.categoria}} {{d.categoria.estado}}</li>
+                {empty} 
+                <li>No hay dispositivos</li>
+            {% endfor %}
+        </ul>
 </body>
 </html>
