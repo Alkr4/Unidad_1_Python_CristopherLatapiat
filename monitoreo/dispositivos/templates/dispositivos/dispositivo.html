@@ -10,6 +10,6 @@
     <p>Categoria: {{dispositivo.categoria}}</p>
     <p>Fecha de creacion: {{dispositivo.created_at}}</p>
     <p>Estado: {{dispositivo.estado}}</p>
-    <p>volver a <a href="{% url 'dispositivo' d.id %}">Detalle</a></p>
+    <p>volver a <a href="{% url 'dispositivo' dispositivo.id %}">Detalle</a></p>
 </body>
 </html>

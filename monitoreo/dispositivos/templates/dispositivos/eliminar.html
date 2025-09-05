@@ -1,0 +1,11 @@
+{% extends "dispositivos/base.html" %}
+
+{% block content %}
+    <h2>Eliminar Dispositivo</h2>
+    <p>Estas seguro de eliminar el dispositivo {{dispositivo.nombre}}</p>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="{% url 'dispositivos' %}" class="btn btn-danger">Cancelar</a>
+    </form>
+{% endblock %}
